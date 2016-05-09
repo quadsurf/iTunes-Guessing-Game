@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta char="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="songs.js"></script>
+  <title>Song Guessing Game</title>
+</head>
+<body>
+  <h1>iTunes Guessing Game</h1>
+  <audio id="audio_preview" src="" style="width:400px;" controls></audio>
+  <form>
+    <label for="user-guess">Can you guess this song?</label>
+    <input id="user-guess" type="text" name="userGuess">
+    <input id="submit" type="submit" value="Submit Guess">
+  </form>
+  <div id="dashboard">
+    Your Guess: <span id="user-guess-display"></span><br>
+    Correct Guesses: <span id="num-correct"></span><br>
+    Incorrect Guesses: <span id="num-incorrect"></span>
+  </div>
+</body>
+</html>
